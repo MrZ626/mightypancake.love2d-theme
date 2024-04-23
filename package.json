@@ -3,7 +3,7 @@
 	"displayName": "LOVE2D Theme",
 	"publisher": "MightyPancake",
 	"description": "A simple color theme that looks like LOVE2D framework for your VS Code editor!",
-	"version": "0.0.5",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
