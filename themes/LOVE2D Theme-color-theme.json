@@ -20,7 +20,7 @@
 		"editorLineNumber.activeForeground": "#ff86c3",
 		"editorLineNumber.foreground": "#6d8fa1",
 		"titleBar.activeBackground": "#072e60",
-		"titleBar.activeForeground": "#ffffff",
+		"titleBar.activeForeground": "#e0e0e0",
 		"titleBar.inactiveBackground": "#0e1f39",
 		"titleBar.inactiveForeground": "#808080",
 		"titleBar.border": "#0e1b37",
@@ -28,25 +28,25 @@
 		"menubar.selectionForeground": "#f092e9",
 		"menu.background": "#234571",
 		"menu.border": "#00000085",
-		"menu.foreground": "#ffffff",
+		"menu.foreground": "#e0e0e0",
 		"menu.selectionBackground": "#995f8c",
 		"menu.selectionBorder": "#00000000",
-		"menu.selectionForeground": "#ffffff",
-		"menu.separatorBackground": "#ffffff",
+		"menu.selectionForeground": "#e0e0e0",
+		"menu.separatorBackground": "#b0b0b0",
 		"editorGroupHeader.tabsBackground": "#052241",
 		"tab.border": "#0e2b52",
 		"tab.activeBorderTop": "#c5749c",
 		"tab.activeBackground": "#9f5279",
 		"tab.activeBorder": "#6f3653",
-		"tab.activeForeground": "#ffffff",
+		"tab.activeForeground": "#e0e0e0",
 		"tab.inactiveBackground": "#345b82",
-		"tab.inactiveForeground": "#ffffff",
+		"tab.inactiveForeground": "#e0e0e0",
 		"tab.hoverBackground": "#b6628c",
-		"tab.hoverForeground": "#ffffff",
+		"tab.hoverForeground": "#e0e0e0",
 		"breadcrumb.activeSelectionForeground": "#ff9fe6",
 		"breadcrumb.background": "#2b3948",
 		"breadcrumb.focusForeground": "#e0e0e0",
-		"breadcrumb.foreground": "#ffffffc2",
+		"breadcrumb.foreground": "#b0b0b0",
 		"activityBar.background": "#0f2050",
 		"activityBar.foreground": "#ffd6e5",
 		"activityBar.inactiveForeground": "#ffdce966",
@@ -57,7 +57,7 @@
 		// "sideBarActivityBarTop.border": "#ff0bff",
 		"sideBar.background": "#212e4e",
 		"sideBar.dropBackground": "#ff6cae26",
-		"sideBar.foreground": "#ffffff",
+		"sideBar.foreground": "#e0e0e0",
 		"sideBarSectionHeader.background": "#1a415e",
 		"sideBarSectionHeader.border": "#ff000033",
 		"sideBarSectionHeader.foreground": "#ffffff",
@@ -107,19 +107,19 @@
 		"editor.findMatchBackground": "#457dc442",
 		"editor.findMatchBorder": "#ffffff9b",
 		// Other found
-		"editor.findMatchHighlightBackground": "#9b179492",
-		"editor.findMatchHighlightBorder": "#ff97f5ae",
+		"editor.findMatchHighlightBackground": "#9b176671",
+		"editor.findMatchHighlightBorder": "#88f7ffcf",
 		"editor.findRangeHighlightBackground": "#4c6f9c27",
-		"editor.findRangeHighlightBorder": null,
+		"editor.findRangeHighlightBorder": "#00000000",
 		// Current word or Varible reading
 		"editor.wordHighlightBackground": "#1ba0be62",
-		"editor.wordHighlightBorder": null,
+		"editor.wordHighlightBorder": "#00000000",
 		// Bracket pair
 		"editorBracketMatch.background": "#00b6732f",
 		"editorBracketMatch.border": "#ffffffc2",
 		// Varible writing
 		"editor.wordHighlightStrongBackground": "#ff61b575",
-		"editor.wordHighlightStrongBorder": null,
+		"editor.wordHighlightStrongBorder": "#00000000",
 		"editor.foldBackground": "#2d5f904d",
 		"editor.hoverHighlightBackground": "#31669c62",
 		"editor.lineHighlightBackground": "#ff00fb15",
@@ -337,6 +337,40 @@
 			],
 			"settings": {
 				"foreground": "#91d4f0"
+			}
+		},
+		{
+			"name": "Namespaces",
+			"scope": "entity.name.namespace",
+			"settings": {
+				"foreground": "#d989b2"
+			}
+		},
+		{
+			"name": "Packages",
+			"scope": "token.package.keyword",
+			"settings": {
+				"foreground": "#3bacde"
+			}
+		},
+		{
+			"name": "Class name",
+			"scope": [
+				"support.class",
+				"entity.name.class",
+				"entity.name.class.identifier.namespace.type",
+				"entity.name.type.class",
+				"entity.name.type.namespace",
+			],
+			"settings": {
+				"foreground": "#d989b2"
+			}
+		},
+		{
+			"name": "Type Name",
+			"scope": "entity.name.type",
+			"settings": {
+				"foreground": "#d989b2"
 			}
 		},
 		{
@@ -696,14 +730,24 @@
 		},
 		{
 			"name": "js/ts module",
-			"scope": "support.module.node,support.type.object.module,support.module.node",
+			"scope": [
+				"support.module.node",
+				"support.type.object.module",
+				"support.module.node",
+			],
 			"settings": {
 				"foreground": "#d989b2"
 			}
 		},
 		{
 			"name": "js variable readwrite",
-			"scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+			"scope": [
+				"variable.other.readwrite",
+				"meta.object-literal.key",
+				"support.variable.property",
+				"support.variable.object.process",
+				"support.variable.object.node",
+			],
 			"settings": {
 				"foreground": "#ff6773"
 			}
@@ -1827,75 +1871,11 @@
 			}
 		},
 		{
-			"name": "Clojure constants",
-			"scope": [
-				"constant.keyword.clojure"
-			],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		},
-		{
-			"name": "Namespaces",
-			"scope": "entity.name.namespace",
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
-			"name": "Packages",
-			"scope": "token.package.keyword",
-			"settings": {
-				"foreground": "#3bacde"
-			}
-		},
-		{
-			"name": "Classes",
-			"scope": "entity.name.type.namespace",
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
-			"name": "Classes",
-			"scope": "support.class, entity.name.type.class",
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
-			"name": "Class name",
-			"scope": "entity.name.class.identifier.namespace.type",
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
-			"name": "Class name",
-			"scope": [
-				"entity.name.class",
-			],
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
-			"name": "Type Name",
-			"scope": "entity.name.type",
-			"settings": {
-				"foreground": "#d989b2"
-			}
-		},
-		{
 			"name": "Support type",
-			"scope": "support.type.property-name",
-			"settings": {
-				"foreground": "#91d4f0"
-			}
-		},
-		{
-			"name": "Support type",
-			"scope": "support.constant.property-value",
+			"scope": [
+				"support.type.property-name",
+				"support.constant.property-value",
+			],
 			"settings": {
 				"foreground": "#91d4f0"
 			}
@@ -1946,7 +1926,6 @@
 			"name": "Attribute IDs",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
-				"fontStyle": "normal",
 				"foreground": "#ff6773"
 			}
 		},
@@ -2076,12 +2055,12 @@
 			}
 		},
 		{
-			"name": "Clojure globals",
+			"name": "Clojure constants",
 			"scope": [
-				"entity.global.clojure"
+				"constant.keyword.clojure"
 			],
 			"settings": {
-				"foreground": "#d989b2"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -2091,6 +2070,15 @@
 			],
 			"settings": {
 				"foreground": "#ff6773"
+			}
+		},
+		{
+			"name": "Clojure globals",
+			"scope": [
+				"entity.global.clojure"
+			],
+			"settings": {
+				"foreground": "#d989b2"
 			}
 		},
 		{
@@ -2131,7 +2119,7 @@
 			}
 		},
 		{
-			"name": "types",
+			"name": "swift/vb types",
 			"scope": [
 				"support.type.swift",
 				"support.type.vb.asp"
