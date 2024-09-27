@@ -50,7 +50,7 @@
 		"activityBar.background": "#0f2050",
 		"activityBar.foreground": "#ffd6e5",
 		"activityBar.inactiveForeground": "#ffdce966",
-		"activityBarBadge.background": "#960c21",
+		"activityBarBadge.background": "#ae1f66",
 		"activityBarBadge.foreground": "#ffffff",
 		"badge.background": "#6c2f4b",
 		"badge.foreground": "#ffffff",
@@ -82,9 +82,9 @@
 		"editorInfo.border": null,
 		"editorWarning.border": null,
 		"editorError.border": null,
-		"editorInfo.background": "#0000ff26",
-		"editorWarning.background": "#ffff0026",
-		"editorError.background": "#ff000042",
+		"editorInfo.background": null,
+		"editorWarning.background": null,
+		"editorError.background": null,
 		"editorInfo.foreground": "#579aff",
 		"editorWarning.foreground": "#fae20b",
 		"editorError.foreground": "#ff3e3e",
@@ -138,12 +138,12 @@
 		"input.border": "#00000000",
 		"input.foreground": "#ffffff",
 		"input.placeholderForeground": "#a0a0a0",
-		"inputOption.activeBackground": "#1b435e66",
+		"inputOption.activeBackground": "#915189",
 		"inputOption.activeBorder": "#007acc00",
 		"inputOption.activeForeground": "#ffffff",
 		"editorWidget.background": "#0c4364",
 		"editorWidget.foreground": "#ffffff",
-		"editorWidget.resizeBorder": "#346ad0",
+		"editorWidget.resizeBorder": "#ff73de",
 		"notifications.background": "#2d526f",
 		"notifications.foreground": "#ffffff",
 		"notifications.border": "#265e88",
@@ -167,7 +167,7 @@
 		"button.hoverBackground": "#1177bb",
 		"button.secondaryBackground": "#be78c4",
 		"button.secondaryForeground": "#ffffff",
-		"button.secondaryHoverBackground": "#45494e",
+		"button.secondaryHoverBackground": "#e348bcaf",
 		"checkbox.background": "#5287b6",
 		"checkbox.border": "#00000000",
 		"checkbox.foreground": "#ffffff",
@@ -264,7 +264,8 @@
 		"terminal.ansiMagenta": "#af3baf",
 		"tree.indentGuidesStroke": "#585858",
 		"walkThrough.embeddedEditorBackground": "#00000050",
-		"widget.shadow": "#342c2ce3",
+		"widget.border": "#7b0068",
+		"widget.shadow": "#ff28a92d",
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -284,7 +285,7 @@
 			"name": "Keywords",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#6479d7"
+				"foreground": "#6a7fda"
 			}
 		},
 		// {
@@ -383,7 +384,7 @@
 			"name": "Variables",
 			"scope": "variable",
 			"settings": {
-				"foreground": "#ff9fe4"
+				"foreground": "#f5a1ca"
 			}
 		},
 		{
@@ -860,10 +861,10 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] JSON Property Name",
+			"name": "JSON Property Name",
 			"scope": "support.type.property-name.json",
 			"settings": {
-				"foreground": "#e7a4d4"
+				"foreground": "#f5a1ca"
 			}
 		},
 		// Python
@@ -1237,28 +1238,28 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown heading setext",
+			"name": "Markdown heading setext",
 			"scope": "markup.heading.setext",
 			"settings": {
 				"foreground": "#91d4f0"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Inline Raw",
+			"name": "Markdown Inline Raw",
 			"scope": "markup.inline.raw.markdown",
 			"settings": {
 				"foreground": "#29a5e8"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Inline Raw",
+			"name": "Markdown Inline Raw",
 			"scope": "markup.inline.raw.string.markdown",
 			"settings": {
 				"foreground": "#29a5e8"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Underline Link/Image",
+			"name": "Markdown Underline Link/Image",
 			"scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
 			"settings": {
 				"foreground": "#3bacde"
@@ -1275,21 +1276,21 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Quote",
+			"name": "Markdown Quote",
 			"scope": "markup.quote.markdown",
 			"settings": {
 				"foreground": "#abca92"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown headings",
+			"name": "Markdown headings",
 			"scope": "entity.name.section.markdown",
 			"settings": {
 				"foreground": "#ff6773"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown heading Punctuation Definition",
+			"name": "Markdown heading Punctuation Definition",
 			"scope": "punctuation.definition.heading.markdown",
 			"settings": {
 				"foreground": "#ff6773"
@@ -1303,14 +1304,14 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown List Punctuation Definition",
+			"name": "Markdown List Punctuation Definition",
 			"scope": "punctuation.definition.list.markdown",
 			"settings": {
 				"foreground": "#ff6773"
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Punctuation Definition",
+			"name": "Markdown Punctuation Definition",
 			"scope": [
 				"beginning.punctuation.definition.list.markdown",
 				"punctuation.definition.metadata.markdown",
@@ -1325,7 +1326,7 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Punctuation Definition Bold",
+			"name": "Markdown Punctuation Definition Bold",
 			"scope": "punctuation.definition.bold.markdown",
 			"settings": {
 				"foreground": "#bf90d5"
